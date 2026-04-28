@@ -1,0 +1,16 @@
+@import 'variables.css';
+@import 'base.css';
+@import 'layout/nav.css';
+@import 'layout/footer.css';
+@import 'components/shared.css';
+@import 'components/hero.css';
+@import 'components/founder.css';
+@import 'components/philosophy.css';
+@import 'components/why.css';
+@import 'components/sports.css';
+@import 'components/programmes.css';
+@import 'components/testimonials.css';
+@import 'components/team.css';
+@import 'components/careers.css';
+@import 'components/admissions.css';
+@import 'responsive.css';

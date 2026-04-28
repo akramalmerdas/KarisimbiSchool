@@ -1,0 +1,36 @@
+/* ══ FOUNDER FULL ══ */
+#founder-full { background: var(--parch); display: grid; grid-template-columns: 1fr 1.1fr; }
+
+.ff-aside { background: var(--forest); padding: 5rem 3.5rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+
+.ff-aside-bg { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0; }
+
+.ff-aside::after { content: '"'; position: absolute; right: -1rem; bottom: -3rem; font-family: 'Cormorant Garamond', serif; font-size: 20rem; font-weight: 600; color: rgba(255,255,255,0.04); line-height: 1; z-index: 1; }
+
+.ff-aside blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-style: italic; font-weight: 300; color: var(--parch); line-height: 1.55; position: relative; z-index: 2; margin-bottom: 1.5rem; }
+
+.ff-aside blockquote em { color: var(--gold); font-style: normal; }
+
+.ff-aside cite { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(201,168,76,0.7); position: relative; z-index: 2; }
+
+.ff-main { padding: 5rem 4.5rem 5rem 4rem; }
+
+.ff-main .section-tag { color: var(--forest2); }
+
+.ff-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 400; line-height: 1.12; color: var(--navy); margin-bottom: 1.8rem; }
+
+.ff-title em { font-style: italic; color: var(--forest); }
+
+.ff-body p { font-size: .95rem; line-height: 1.9; font-weight: 300; color: var(--text-md); margin-bottom: 1.1rem; }
+
+.ff-body p:last-child { margin-bottom: 0; }
+
+.ff-signature { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--sand); display: flex; align-items: center; gap: 1.2rem; }
+
+.ff-sig-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--navy); border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--gold); flex-shrink: 0; overflow: hidden; }
+
+.ff-sig-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.ff-sig-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); }
+
+.ff-sig-title { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--forest2); margin-top: .1rem; }

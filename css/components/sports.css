@@ -1,0 +1,70 @@
+/* ══ SPORTS ══ */
+#sports { background: var(--forest); padding: 6rem 5rem; }
+
+.sports-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-bottom: 4rem; align-items: center; }
+
+.sports-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 300; color: var(--parch); line-height: 1.1; }
+
+.sports-title em { font-style: italic; color: var(--gold); }
+
+.sports-badge { display: inline-flex; align-items: center; gap: .6rem; background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.35); padding: .6rem 1.2rem; border-radius: 100px; margin-top: 1.2rem; }
+
+.sb-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+.sb-text { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+
+.sports-intro { font-size: .93rem; line-height: 1.85; color: rgba(240,235,224,0.7); font-weight: 300; }
+
+.sports-collab-box { background: rgba(13,27,42,0.35); border: 1px solid rgba(201,168,76,0.2); border-radius: 4px; padding: 1.8rem; margin-top: 1.5rem; }
+
+.scb-label { font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: .7rem; }
+
+.scb-text { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; color: var(--parch); line-height: 1.6; }
+
+.sports-content-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+.sports-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--gold); margin-bottom: 1rem; }
+
+.sports-list { list-style: none; display: flex; flex-direction: column; gap: .65rem; }
+
+.sports-list li { font-size: .85rem; line-height: 1.65; color: rgba(240,235,224,0.72); display: flex; gap: .7rem; align-items: flex-start; }
+
+.sports-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
+
+.sports-disciplines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 3rem; }
+
+.sport-card { background: rgba(13,27,42,0.35); border: 1px solid rgba(201,168,76,0.2); border-radius: 4px; padding: 0; text-align: center; transition: background .3s, border-color .3s; overflow: hidden; display: flex; flex-direction: column; }
+
+.sport-card:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.4); }
+
+.sport-card-img { height: 140px; overflow: hidden; }
+
+.sport-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.sport-card:hover .sport-card-img img { transform: scale(1.1); }
+
+.sport-card-content { padding: 1.6rem 1.4rem; }
+
+.sport-icon { font-size: 2rem; margin-bottom: .7rem; }
+
+.sport-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--parch); margin-bottom: .4rem; }
+
+.sport-desc { font-size: .78rem; line-height: 1.6; color: rgba(240,235,224,0.55); }
+
+.sports-event-bar { margin-top: 2rem; background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25); border-radius: 4px; padding: 1.4rem 2rem; display: flex; align-items: center; gap: 1.5rem; }
+
+.seb-icon { font-size: 1.5rem; flex-shrink: 0; }
+
+.seb-label { font-size: .65rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: .3rem; }
+
+.seb-text { font-size: .9rem; color: rgba(240,235,224,0.78); line-height: 1.5; }
+
+.msc-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; margin-top: 3rem; }
+
+.msc-card { background: rgba(13,27,42,0.3); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.4rem; }
+
+.msc-icon { font-size: 1.2rem; margin-bottom: .5rem; }
+
+.msc-title { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); margin-bottom: .4rem; }
+
+.msc-text { font-size: .82rem; line-height: 1.65; color: rgba(240,235,224,0.65); }

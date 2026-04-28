@@ -1,0 +1,60 @@
+/* ══ ADMISSIONS ══ */
+#admissions { background: var(--parch); padding: 6rem 5rem; }
+
+.adm-header { text-align: center; max-width: 600px; margin: 0 auto 4rem; }
+
+.adm-header h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; color: var(--navy); line-height: 1.12; }
+
+.adm-header h2 em { font-style: italic; color: var(--forest); }
+
+.adm-header p { font-size: .9rem; line-height: 1.8; color: var(--text-md); margin-top: .9rem; font-weight: 300; }
+
+.adm-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; }
+
+.adm-steps { display: flex; flex-direction: column; gap: 0; }
+
+.adm-step { display: grid; grid-template-columns: 52px 1fr; gap: 1.4rem; position: relative; }
+
+.adm-step:not(:last-child)::before { content: ''; position: absolute; left: 25px; top: 54px; bottom: -20px; width: 1px; background: linear-gradient(to bottom, var(--gold), transparent); opacity: .25; }
+
+.step-dot { width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid rgba(201,168,76,0.3); background: var(--cream); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--gold); flex-shrink: 0; transition: background .3s, border-color .3s; }
+
+.adm-step:hover .step-dot { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+
+.step-body { padding-bottom: 2.2rem; }
+
+.step-body h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: .35rem; }
+
+.step-body p { font-size: .87rem; line-height: 1.75; color: var(--text-md); font-weight: 300; }
+
+.adm-info { background: var(--navy); border-radius: 4px; overflow: hidden; position: sticky; top: 88px; align-self: start; }
+
+.adm-info-header { background: var(--forest); padding: 1.6rem 2rem; }
+
+.adm-info-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--parch); font-weight: 400; }
+
+.adm-info-body { padding: 1.4rem 2rem; }
+
+.info-row { display: flex; justify-content: space-between; align-items: center; padding: .82rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+.info-row:last-of-type { border-bottom: none; }
+
+.info-lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(240,235,224,0.4); }
+
+.info-val { font-size: .87rem; color: var(--parch); }
+
+.adm-cta-block { padding: 1.4rem 2rem 2rem; border-top: 1px solid rgba(201,168,76,0.15); }
+
+.adm-image-box { margin-top: 2rem; border-radius: 4px; overflow: hidden; height: 280px; border: 1px solid rgba(201,168,76,0.2); }
+
+.adm-image-box img { width: 100%; height: 100%; object-fit: cover; }
+
+.btn-full { width: 100%; background: var(--gold); color: var(--navy); padding: .95rem; border: none; border-radius: 2px; font-family: 'DM Sans', sans-serif; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; cursor: pointer; transition: opacity .2s; margin-bottom: .9rem; }
+
+.btn-full:hover { opacity: .85; }
+
+.btn-full.outline { background: transparent; color: rgba(240,235,224,0.7); border: 1px solid rgba(255,255,255,0.12); }
+
+.btn-full.outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.adm-contact { text-align: center; margin-top: 1rem; font-size: .76rem; color: rgba(240,235,224,0.35); line-height: 1.7; }

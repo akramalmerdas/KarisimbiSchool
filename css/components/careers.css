@@ -1,0 +1,48 @@
+/* ══ CAREERS ══ */
+#careers { background: var(--navy); padding: 6rem 5rem; position: relative; overflow: hidden; }
+
+.careers-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
+
+.careers-header, .jobs-grid, .careers-ethos { position: relative; z-index: 1; }
+
+.careers-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: end; margin-bottom: 4rem; }
+
+.careers-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 300; color: var(--parch); line-height: 1.12; }
+
+.careers-title em { font-style: italic; color: var(--gold); }
+
+.careers-intro { font-size: .9rem; line-height: 1.85; color: rgba(240,235,224,0.58); font-weight: 300; }
+
+.jobs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+.job-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); border-radius: 4px; padding: 2rem; transition: background .3s, border-color .3s; }
+
+.job-card:hover { background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.35); }
+
+.job-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .3rem .9rem; border-radius: 100px; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1rem; }
+
+.job-badge.guide   { background: rgba(46,94,64,0.2); color: #7ecba0; border: 1px solid rgba(46,94,64,0.3); }
+
+.job-badge.assist  { background: rgba(201,168,76,0.1); color: var(--gold-lt); border: 1px solid rgba(201,168,76,0.2); }
+
+.job-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; color: var(--parch); margin-bottom: .5rem; }
+
+.job-age  { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+
+.job-desc { font-size: .87rem; line-height: 1.78; color: rgba(240,235,224,0.6); font-weight: 300; margin-bottom: 1.4rem; }
+
+.job-requirements { list-style: none; display: flex; flex-direction: column; gap: .5rem; margin-bottom: 1.4rem; }
+
+.job-requirements li { font-size: .82rem; color: rgba(240,235,224,0.55); display: flex; gap: .6rem; align-items: flex-start; }
+
+.job-requirements li::before { content: '✦'; color: var(--gold); flex-shrink: 0; font-size: .55rem; margin-top: .22rem; }
+
+.job-apply-btn { display: inline-block; padding: .6rem 1.4rem; background: transparent; border: 1px solid rgba(201,168,76,0.35); border-radius: 2px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); cursor: pointer; transition: all .25s; text-decoration: none; }
+
+.job-apply-btn:hover { background: var(--gold); color: var(--navy); }
+
+.careers-ethos { margin-top: 3rem; background: rgba(30,58,47,0.3); border: 1px solid rgba(201,168,76,0.18); border-radius: 4px; padding: 2.2rem 2.5rem; text-align: center; }
+
+.careers-ethos h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); margin-bottom: .8rem; }
+
+.careers-ethos p { font-size: .9rem; line-height: 1.8; color: rgba(240,235,224,0.6); font-weight: 300; max-width: 680px; margin: 0 auto; }

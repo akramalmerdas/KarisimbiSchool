@@ -1,0 +1,19 @@
+/* ══ BASE STYLES ══ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--navy); overflow-x: hidden; }
+
+/* ══ ANIMATIONS ══ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero-left > * { animation: fadeUp .75s ease both; }
+
+.hero-eyebrow { animation-delay: .1s; }
+
+.hero-title   { animation-delay: .22s; }
+
+.hero-intro   { animation-delay: .34s; }
+
+.hero-ctas    { animation-delay: .46s; }
