@@ -1,0 +1,38 @@
+# ══ OS FILES ══
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ══ EDITOR / IDE ══
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.session*
+*.sublime-workspace
+*.sublime-project
+
+# ══ LOCAL CONFIG & SECRETS ══
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+
+# ══ BUILD OUTPUTS (if any future build step is added) ══
+dist/
+build/
+out/
+
+# ══ LOGS & DEBUG ══
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ══ TEST COVERAGE ══
+coverage/
+*.lcov
