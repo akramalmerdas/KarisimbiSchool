@@ -39,7 +39,7 @@
 
 .phil-card.mission .phil-card-header { background: var(--forest); }
 
-.phil-card.vision  .phil-card-header { background: var(--navy2); }
+.phil-card.vision  .phil-card-header { background: var(--forest); }
 
 .phil-card.values  .phil-card-header { background: linear-gradient(135deg, var(--forest) 0%, var(--navy2) 100%); }
 
