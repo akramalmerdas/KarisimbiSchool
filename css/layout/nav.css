@@ -11,10 +11,20 @@ nav {
 .nav-logo { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
 
 .nav-emblem {
-  width: 38px; height: 38px; border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
   border: 1.5px solid var(--gold);
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* This ensures the image stays inside the circle */
+}
+
+.nav-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This scales the logo to fill the circle without stretching */
 }
 
 .nav-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--parch); letter-spacing: .03em; }
@@ -32,8 +42,7 @@ nav {
   background: transparent;
   cursor: pointer;
   transition: all .25s;
-  position: relative;
-  z-index: 300;
+  z-index: 201;
 }
 
 .nav-hamburger:hover {
@@ -89,10 +98,12 @@ nav {
     transform: translateX(-100%);
     transition: transform .35s ease;
     border-bottom: 1px solid rgba(201,168,76,0.15);
+    z-index: 199;
   }
   
   .nav-links.active {
-    transform: translateX(0);
+    transform: translateX(0) !important;
+    display: flex !important;
   }
   
   .nav-links li {

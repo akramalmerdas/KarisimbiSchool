@@ -3,28 +3,20 @@
  */
 
 export function initMobileMenu() {
-  console.log('initMobileMenu() called');
-  
   const hamburger = document.querySelector('.nav-hamburger');
   const navLinks = document.querySelector('.nav-links');
   const navItems = document.querySelectorAll('.nav-links a');
 
-  console.log('hamburger element:', hamburger);
-  console.log('navLinks element:', navLinks);
-
   if (!hamburger || !navLinks) {
-    console.error('Mobile menu elements not found!');
+    console.log('Mobile menu elements not found');
     return;
   }
 
   // Toggle menu on hamburger click
-  hamburger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    console.log('Hamburger clicked!');
+  hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
+    console.log('Hamburger clicked!');
     navLinks.classList.toggle('active');
-    console.log('After toggle - hamburger active:', hamburger.classList.contains('active'));
-    console.log('After toggle - navLinks active:', navLinks.classList.contains('active'));
   });
 
   // Close menu when a nav item is clicked
