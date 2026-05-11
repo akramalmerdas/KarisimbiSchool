@@ -1,17 +1,189 @@
-/* ══ RESPONSIVE ══ */
+/* ══════════════════════════════════════════
+   RESPONSIVE — Mobile-first breakpoints
+   1100px → tablet landscape / small desktop
+    768px → tablet portrait
+    480px → phone
+══════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────
+   1100px — Tablet landscape
+───────────────────────────────────────── */
 @media (max-width: 1100px) {
-  nav { padding: .9rem 1.5rem; }
-  .nav-links { display: none; }
-  #welcome, #founder-full, .why-header, .sports-header, .team-header, .careers-header, .adm-layout, .footer-top { grid-template-columns: 1fr; }
-  #philosophy, #why, #sports, #programmes, #testimonials, #team, #careers, #admissions, footer { padding-left: 2rem; padding-right: 2rem; }
-  .phil-grid, .reasons-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Sections: reduce side padding ── */
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions,
+  footer { padding-left: 2.5rem; padding-right: 2.5rem; }
+
+  /* ── Founder ── */
+  #founder-full { grid-template-columns: 1fr; }
+  .ff-aside { min-height: 340px; padding: 3.5rem 2.5rem; }
+  .ff-main  { padding: 3.5rem 2.5rem; }
+
+  /* ── Hero ── */
+  #welcome { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+  /* ── Philosophy ── */
+  .phil-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Why ── */
+  .why-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .why-pillars { grid-template-columns: 1fr; gap: 0; }
+  .reasons-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Sports ── */
+  .sports-header { grid-template-columns: 1fr; gap: 2rem; }
+  .sports-disciplines { grid-template-columns: 1fr 1fr; }
+  .sports-content-cols { grid-template-columns: 1fr; }
+  .msc-row { grid-template-columns: 1fr 1fr; }
+
+  /* ── Programmes ── */
   .programme-grid { grid-template-columns: 1fr; }
-  .why-pillars, .sports-disciplines, .sports-content-cols, .msc-row, .test-grid, .jobs-grid { grid-template-columns: 1fr; }
+
+  /* ── Testimonials ── */
+  .test-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Team ── */
+  .team-header { grid-template-columns: 1fr; gap: 1.5rem; }
   .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
-  .hero-right { padding: 2rem; }
-  .footer-top { grid-template-columns: 1fr 1fr; }
+
+  /* ── Admissions ── */
+  .adm-layout { grid-template-columns: 1fr; }
+  .adm-info { position: static; }
+
+  /* ── Careers ── */
+  .careers-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+
+  /* ── Footer ── */
+  footer { padding-left: 2.5rem; padding-right: 2.5rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 
-@media (max-width: 700px) {
-  .phil-grid, .reasons-grid, .team-placeholder-grid { grid-template-columns: 1fr; }
+
+/* ─────────────────────────────────────────
+   768px — Tablet portrait
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* ── Sections: tighter padding ── */
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions,
+  footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions { padding-top: 4rem; padding-bottom: 4rem; }
+
+  /* ── Founder ── */
+  .ff-aside { min-height: 260px; padding: 2.5rem 1.5rem; }
+  .ff-main  { padding: 2.5rem 1.5rem; }
+
+  /* ── Philosophy ── */
+  .phil-grid { grid-template-columns: 1fr; }
+
+  /* ── Why ── */
+  .reasons-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Sports ── */
+  .sports-disciplines { grid-template-columns: 1fr 1fr; }
+  .msc-row { grid-template-columns: 1fr; }
+  .sports-partners { padding: 1.5rem; gap: 1rem; }
+  .sp-logos { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
+  .sp-divider { width: 1px; height: 60px; }
+
+  /* ── Testimonials ── */
+  .test-grid { grid-template-columns: 1fr; }
+
+  /* ── Team ── */
+  .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Admissions ── */
+
+  /* ── Footer ── */
+  footer { padding: 3rem 1.5rem 2rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
+}
+
+
+/* ─────────────────────────────────────────
+   480px — Phone
+───────────────────────────────────────── */
+@media (max-width: 480px) {
+
+  /* ── Sections ── */
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions { padding-left: 1.2rem; padding-right: 1.2rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+  /* ── Nav ── */
+  nav { padding: .75rem 1.2rem; }
+  .nav-emblem { width: 48px; height: 48px; }
+  .nav-name { font-size: .82rem; }
+
+  /* ── Hero ── */
+  #welcome { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .hero-left { padding: 4rem 0 3rem; }
+  .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero-intro { font-size: .88rem; }
+  .hero-ctas { flex-direction: column; align-items: center; gap: .75rem; }
+  .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+
+  /* ── Founder ── */
+  .ff-aside { min-height: 220px; }
+  .ff-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  .ff-body { font-size: .88rem; }
+
+  /* ── Philosophy ── */
+  #philosophy { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .phil-grid { grid-template-columns: 1fr; }
+  .phil-header h2 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+
+  /* ── Why ── */
+  #why { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .why-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+  .reasons-grid { grid-template-columns: 1fr; }
+  .pillar-panel { padding: 2rem 1.4rem; }
+
+  /* ── Sports ── */
+  #sports { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .sports-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+  .sports-disciplines { grid-template-columns: 1fr; }
+  .sports-partners { padding: 1.2rem; gap: .8rem; }
+  .sp-logos { flex-direction: row; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .sp-logo-img { width: 90px; height: 90px; }
+  .sp-logo-card { flex-direction: column; align-items: center; text-align: center; }
+  .sp-divider { width: 40px; height: 1px; align-self: center; }
+  .sports-event-bar { flex-direction: column; gap: .8rem; text-align: center; }
+  .msc-row { grid-template-columns: 1fr; }
+
+  /* ── Programmes ── */
+  #programmes { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .programme-grid { grid-template-columns: 1fr; }
+  .french-banner { flex-direction: column; gap: .8rem; text-align: center; }
+  .prog-tags { justify-content: center; }
+
+  /* ── Testimonials ── */
+  #testimonials { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .test-grid { grid-template-columns: 1fr; }
+
+  /* ── Team ── */
+  #team { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .team-placeholder-grid { grid-template-columns: 1fr; }
+  .team-credentials { gap: 1.2rem; }
+
+  /* ── Admissions ── */
+  #admissions { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .adm-layout { grid-template-columns: 1fr; }
+  .adm-info-body { padding: 1rem 1.2rem; }
+  .adm-cta-block { padding: 1rem 1.2rem 1.5rem; }
+  .info-row { flex-direction: column; align-items: flex-start; gap: .2rem; }
+
+  /* ── Careers ── */
+  #careers { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+
+  /* ── Footer ── */
+  footer { padding: 3rem 1.2rem 2rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
 }
