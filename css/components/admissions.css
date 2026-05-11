@@ -57,4 +57,4 @@
 
 .btn-full.outline:hover { border-color: var(--gold); color: var(--gold); }
 
-.adm-contact { text-align: center; margin-top: 1rem; font-size: .76rem; color: rgba(240,235,224,0.35); line-height: 1.7; }
+.adm-contact { text-align: center; margin-top: 1rem; font-size: .76rem; color: rgb(240, 235, 224); line-height: 1.7; }
