@@ -68,3 +68,83 @@
 .msc-title { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); margin-bottom: .4rem; }
 
 .msc-text { font-size: .82rem; line-height: 1.65; color: rgba(240,235,224,0.65); }
+
+/* ── Sports Partners ── */
+.sports-partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  padding: 1.4rem 2rem;
+  background: rgba(13,27,42,0.3);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  flex-wrap: wrap;
+}
+
+.sp-label {
+  font-size: .65rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(201,168,76,0.6);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sp-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  flex: 1;
+}
+
+.sp-logo-card {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  transition: opacity .3s;
+}
+
+.sp-logo-card:hover { opacity: .85; }
+
+.sp-logo-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sp-logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  filter: none;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.sp-logo-card:hover .sp-logo-img img { opacity: 1; }
+
+.sp-logo-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .95rem;
+  font-weight: 400;
+  color: rgba(240,235,224,0.6);
+  letter-spacing: .03em;
+}
+
+.sp-divider {
+  width: 1px;
+  height: 80px;
+  background: rgba(201,168,76,0.2);
+  flex-shrink: 0;
+}
