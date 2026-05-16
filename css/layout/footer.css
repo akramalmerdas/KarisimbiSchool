@@ -23,7 +23,11 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 
 .footer-col ul a:hover { color: var(--parch); }
 
-.footer-contact p { font-size: .83rem; line-height: 1.85; color: rgba(240,235,224,0.4); font-weight: 300; }
+.footer-contact { font-size: .83rem; line-height: 1.85; color: rgba(240,235,224,0.4); font-weight: 300; font-style: normal; }
+
+.footer-contact a { color: rgba(240,235,224,0.4); text-decoration: none; transition: color .2s; }
+
+.footer-contact a:hover { color: var(--parch); }
 
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
 

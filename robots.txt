@@ -1,0 +1,16 @@
+# ══════════════════════════════════════════
+# robots.txt — Karisimbi Montessori School
+# https://www.karisimbischool.com
+# ══════════════════════════════════════════
+
+# Allow all search engine crawlers to index the full site
+User-agent: *
+Allow: /
+
+# Block access to any development or private assets
+Disallow: /src/
+Disallow: /tests/
+Disallow: /assets/New folder/
+
+# Sitemap location — tells Google exactly where to find it
+Sitemap: https://www.karisimbischool.com/sitemap.xml
