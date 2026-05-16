@@ -40,13 +40,38 @@
   <link rel="apple-touch-icon" href="assets/images/Logo.jpeg"/>
 
   <!-- ═══════════════════════════════════════
-       GOOGLE FONTS — Preconnect for faster load
+       GOOGLE FONTS — Non-blocking load
+       media="print" + onload swap trick prevents
+       the font request from blocking first render
   ═══════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  </noscript>
 
-  <link rel="stylesheet" href="css/main.css"/>
+  <!-- ═══════════════════════════════════════
+       CSS — Loaded as parallel <link> tags
+       Replaces @import chain in main.css which
+       forces sequential requests and blocks render
+  ═══════════════════════════════════════ -->
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/layout/nav.css"/>
+  <link rel="stylesheet" href="css/layout/footer.css"/>
+  <link rel="stylesheet" href="css/components/shared.css"/>
+  <link rel="stylesheet" href="css/components/hero.css"/>
+  <link rel="stylesheet" href="css/components/founder.css"/>
+  <link rel="stylesheet" href="css/components/philosophy.css"/>
+  <link rel="stylesheet" href="css/components/why.css"/>
+  <link rel="stylesheet" href="css/components/sports.css"/>
+  <link rel="stylesheet" href="css/components/programmes.css"/>
+  <link rel="stylesheet" href="css/components/testimonials.css"/>
+  <link rel="stylesheet" href="css/components/team.css"/>
+  <link rel="stylesheet" href="css/components/careers.css"/>
+  <link rel="stylesheet" href="css/components/admissions.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
 
   <!-- ═══════════════════════════════════════
        STRUCTURED DATA — Schema.org JSON-LD
@@ -183,7 +208,7 @@
 <nav>
   <a href="#welcome" class="nav-logo">
    <div class="nav-emblem">
-  <img src="assets/images/Logo.jpeg" alt="Karisimbi Montessori School logo — Kigali, Rwanda">
+  <img src="assets/images/Logo.jpeg" alt="Karisimbi Montessori School logo — Kigali, Rwanda" fetchpriority="high">
 </div>
     <span class="nav-name">Karisimbi Montessori School</span>
   </a>  <button class="nav-hamburger" aria-label="Toggle menu">
@@ -1154,7 +1179,7 @@ If something in you is saying yes, trust that. Come and see us. Bring your child
   </div>
 </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
 
