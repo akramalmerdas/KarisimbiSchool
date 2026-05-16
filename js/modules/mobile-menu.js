@@ -4,18 +4,14 @@
 
 export function initMobileMenu() {
   const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  const navItems = document.querySelectorAll('.nav-links a');
+  const navLinks  = document.querySelector('.nav-links');
+  const navItems  = document.querySelectorAll('.nav-links a');
 
-  if (!hamburger || !navLinks) {
-    console.log('Mobile menu elements not found');
-    return;
-  }
+  if (!hamburger || !navLinks) return;
 
   // Toggle menu on hamburger click
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    console.log('Hamburger clicked!');
     navLinks.classList.toggle('active');
   });
 
@@ -34,6 +30,4 @@ export function initMobileMenu() {
       navLinks.classList.remove('active');
     }
   });
-
-  console.log('Mobile menu module ready');
 }
