@@ -1,11 +1,11 @@
-/* ══ BASE STYLES ══ */
+﻿/* â•â• BASE STYLES â•â• */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
 body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--navy); overflow-x: hidden; }
 
-/* ══ ANIMATIONS ══ */
+/* â•â• ANIMATIONS â•â• */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .hero-left > * { animation: fadeUp .75s ease both; }
@@ -18,7 +18,7 @@ body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(
 
 .hero-ctas    { animation-delay: .46s; }
 
-/* ══ SEO UTILITY ══
+/* â•â• SEO UTILITY â•â•
    Visually hidden but readable by search engines and screen readers.
    Used for keyword-enriched text that doesn't disrupt visual design. */
 .seo-hidden {
@@ -35,13 +35,13 @@ body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(
 
 
 /* bundel.css*/
-/* ══════════════════════════════════════════
-   KARISIMBI MONTESSORI SCHOOL — CSS BUNDLE
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   KARISIMBI MONTESSORI SCHOOL â€” CSS BUNDLE
    Single file replaces 16 separate requests.
-   Order: variables → base → layout → components → responsive
-══════════════════════════════════════════ */
+   Order: variables â†’ base â†’ layout â†’ components â†’ responsive
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-/* ══ GLOBAL VARIABLES ══ */
+/* â•â• GLOBAL VARIABLES â•â• */
 :root {
   --navy:    #0D1B2A;
   --navy2:   #162535;
@@ -58,14 +58,14 @@ body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(
   --text-md: #3a4a3a;
 }
 
-/* ══ BASE STYLES ══ */
+/* â•â• BASE STYLES â•â• */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
 body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--navy); overflow-x: hidden; }
 
-/* ══ ANIMATIONS ══ */
+/* â•â• ANIMATIONS â•â• */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .hero-left > * { animation: fadeUp .75s ease both; }
@@ -74,14 +74,14 @@ body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(
 .hero-intro   { animation-delay: .34s; }
 .hero-ctas    { animation-delay: .46s; }
 
-/* ══ SEO UTILITY ══ */
+/* â•â• SEO UTILITY â•â• */
 .seo-hidden {
   position: absolute; width: 1px; height: 1px; padding: 0;
   margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
   white-space: nowrap; border: 0;
 }
 
-/* ══ NAVIGATION ══ */
+/* â•â• NAVIGATION â•â• */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; align-items: center; justify-content: space-between;
@@ -140,7 +140,7 @@ nav {
   .nav-apply { display: none; }
 }
 
-/* ══ FOOTER ══ */
+/* â•â• FOOTER â•â• */
 footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative; overflow: hidden; }
 .footer-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.03; z-index: 0; }
 .footer-top, .footer-bottom { position: relative; z-index: 1; }
@@ -160,13 +160,13 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .footer-bottom p { font-size: .74rem; color: rgba(240,235,224,0.22); }
 .footer-mark { font-family: 'Cormorant Garamond', serif; font-size: .82rem; color: rgba(201,168,76,0.4); letter-spacing: .06em; }
 
-/* ══ SHARED ══ */
+/* â•â• SHARED â•â• */
 .section-tag { display: inline-block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: .9rem; }
-.section-tag::before { content: '✦ '; }
+.section-tag::before { content: 'âœ¦ '; }
 .divider-ornament { text-align: center; padding: 2rem 0; font-size: .75rem; letter-spacing: .5em; color: rgba(201,168,76,0.35); }
 .gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: .2; }
 
-/* ══ HERO ══ */
+/* â•â• HERO â•â• */
 #welcome { min-height: 100vh; background: var(--navy); display: grid; grid-template-columns: 1fr; padding-top: 68px; position: relative; overflow: hidden; place-items: center; }
 .hero-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.25; z-index: 0; }
 #welcome::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 0% 60%, rgba(30,58,47,0.7) 0%, transparent 65%), radial-gradient(ellipse 50% 50% at 100% 10%, rgba(201,168,76,0.15) 0%, transparent 60%); z-index: 1; }
@@ -195,7 +195,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: var(--gold); display: block; }
 .stat-lbl { font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: rgba(240,235,224,0.5); }
 
-/* ══ FOUNDER FULL ══ */
+/* â•â• FOUNDER FULL â•â• */
 #founder-full { background: var(--parch); display: grid; grid-template-columns: 1fr 1.1fr; }
 .ff-aside { background: var(--forest); padding: 5rem 3.5rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
 .ff-aside-bg { position: absolute; inset: 0; background-image: url('../assets/images/founder.webp'); background-size: cover; background-position: right; opacity: 0.50; z-index: 0; }
@@ -215,7 +215,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .ff-sig-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); }
 .ff-sig-title { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--forest2); margin-top: .1rem; }
 
-/* ══ PHILOSOPHY ══ */
+/* â•â• PHILOSOPHY â•â• */
 #philosophy { background: var(--navy); padding: 6rem 5rem; position: relative; overflow: hidden; }
 .phil-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
 .phil-header, .phil-grid { position: relative; z-index: 1; }
@@ -240,10 +240,10 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .phil-card.values  .phil-card-header { background: linear-gradient(135deg, var(--forest) 0%, var(--navy2) 100%); }
 .values-list { list-style: none; display: flex; flex-direction: column; gap: .75rem; }
 .values-list li { display: flex; gap: .75rem; align-items: flex-start; font-size: .875rem; line-height: 1.6; color: rgba(240,235,224,0.62); font-weight: 300; }
-.values-list li::before { content: '✦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
+.values-list li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
 .values-list li strong { color: var(--gold-lt); }
 
-/* ══ WHY ══ */
+/* â•â• WHY â•â• */
 #why { background: var(--mist); padding: 6rem 5rem; }
 .why-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
 .why-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 400; color: var(--navy); line-height: 1.1; }
@@ -272,7 +272,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .rt-title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; line-height: 1.25; }
 .rt-body { font-size: .82rem; line-height: 1.72; color: #4a5540; font-weight: 300; }
 
-/* ══ SPORTS ══ */
+/* â•â• SPORTS â•â• */
 #sports { background: var(--forest); padding: 6rem 5rem; }
 .sports-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-bottom: 4rem; align-items: center; }
 .sports-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 300; color: var(--parch); line-height: 1.1; }
@@ -288,7 +288,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .sports-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--gold); margin-bottom: 1rem; }
 .sports-list { list-style: none; display: flex; flex-direction: column; gap: .65rem; }
 .sports-list li { font-size: .85rem; line-height: 1.65; color: rgba(240,235,224,0.72); display: flex; gap: .7rem; align-items: flex-start; }
-.sports-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
+.sports-list li::before { content: 'â†’'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
 .sports-disciplines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 3rem; }
 .sport-card { background: rgba(13,27,42,0.35); border: 1px solid rgba(201,168,76,0.2); border-radius: 4px; padding: 0; text-align: center; transition: background .3s, border-color .3s; overflow: hidden; display: flex; flex-direction: column; }
 .sport-card:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.4); }
@@ -354,7 +354,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .prog-tag.french { background: rgba(30,58,47,0.08); color: var(--forest); border: 1px solid rgba(30,58,47,0.2); }
 .prog-bg-num { position: absolute; bottom: -1rem; right: 1rem; font-family: 'Cormorant Garamond', serif; font-size: 8rem; font-weight: 600; line-height: 1; color: rgba(13,27,42,0.04); pointer-events: none; }
 
-/* ══ PROGRAMMES ══ */
+/* â•â• PROGRAMMES â•â• */
 #programmes { background: var(--cream); padding: 6rem 5rem; }
 .prog-header { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
 .prog-header h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; color: var(--navy); line-height: 1.12; }
@@ -409,75 +409,75 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 @import 'responsive.css';
 
 /* responsive.css*/
-/* ══════════════════════════════════════════
-   RESPONSIVE — Mobile-first breakpoints
-   1100px → tablet landscape / small desktop
-    768px → tablet portrait
-    480px → phone
-══════════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   RESPONSIVE â€” Mobile-first breakpoints
+   1100px â†’ tablet landscape / small desktop
+    768px â†’ tablet portrait
+    480px â†’ phone
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-/* ─────────────────────────────────────────
-   1100px — Tablet landscape
-───────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   1100px â€” Tablet landscape
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 1100px) {
 
-  /* ── Sections: reduce side padding ── */
+  /* â”€â”€ Sections: reduce side padding â”€â”€ */
   #philosophy, #why, #sports, #programmes,
   #testimonials, #team, #careers, #admissions,
   footer { padding-left: 2.5rem; padding-right: 2.5rem; }
 
-  /* ── Founder ── */
+  /* â”€â”€ Founder â”€â”€ */
   #founder-full { grid-template-columns: 1fr; }
   .ff-aside { min-height: 340px; padding: 3.5rem 2.5rem; }
   .ff-main  { padding: 3.5rem 2.5rem; }
 
-  /* ── Hero ── */
+  /* â”€â”€ Hero â”€â”€ */
   #welcome { padding-left: 1.5rem; padding-right: 1.5rem; }
 
-  /* ── Philosophy ── */
+  /* â”€â”€ Philosophy â”€â”€ */
   .phil-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Why ── */
+  /* â”€â”€ Why â”€â”€ */
   .why-header { grid-template-columns: 1fr; gap: 1.5rem; }
   .why-pillars { grid-template-columns: 1fr; gap: 0; }
   .reasons-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Sports ── */
+  /* â”€â”€ Sports â”€â”€ */
   .sports-header { grid-template-columns: 1fr; gap: 2rem; }
   .sports-disciplines { grid-template-columns: 1fr 1fr; }
   .sports-content-cols { grid-template-columns: 1fr; }
   .msc-row { grid-template-columns: 1fr 1fr; }
 
-  /* ── Programmes ── */
+  /* â”€â”€ Programmes â”€â”€ */
   .programme-grid { grid-template-columns: 1fr; }
 
-  /* ── Testimonials ── */
+  /* â”€â”€ Testimonials â”€â”€ */
   .test-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Team ── */
+  /* â”€â”€ Team â”€â”€ */
   .team-header { grid-template-columns: 1fr; gap: 1.5rem; }
   .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Admissions ── */
+  /* â”€â”€ Admissions â”€â”€ */
   .adm-layout { grid-template-columns: 1fr; }
   .adm-info { position: static; }
 
-  /* ── Careers ── */
+  /* â”€â”€ Careers â”€â”€ */
   .careers-header { grid-template-columns: 1fr; gap: 1.5rem; }
   .jobs-grid { grid-template-columns: 1fr; }
 
-  /* ── Footer ── */
+  /* â”€â”€ Footer â”€â”€ */
   footer { padding-left: 2.5rem; padding-right: 2.5rem; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 
 
-/* ─────────────────────────────────────────
-   768px — Tablet portrait
-───────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   768px â€” Tablet portrait
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 768px) {
 
-  /* ── Sections: tighter padding ── */
+  /* â”€â”€ Sections: tighter padding â”€â”€ */
   #philosophy, #why, #sports, #programmes,
   #testimonials, #team, #careers, #admissions,
   footer { padding-left: 1.5rem; padding-right: 1.5rem; }
@@ -485,53 +485,53 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
   #philosophy, #why, #sports, #programmes,
   #testimonials, #team, #careers, #admissions { padding-top: 4rem; padding-bottom: 4rem; }
 
-  /* ── Founder ── */
+  /* â”€â”€ Founder â”€â”€ */
   .ff-aside { min-height: 260px; padding: 2.5rem 1.5rem; }
   .ff-main  { padding: 2.5rem 1.5rem; }
 
-  /* ── Philosophy ── */
+  /* â”€â”€ Philosophy â”€â”€ */
   .phil-grid { grid-template-columns: 1fr; }
 
-  /* ── Why ── */
+  /* â”€â”€ Why â”€â”€ */
   .reasons-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Sports ── */
+  /* â”€â”€ Sports â”€â”€ */
   .sports-disciplines { grid-template-columns: 1fr 1fr; }
   .msc-row { grid-template-columns: 1fr; }
   .sports-partners { padding: 1.5rem; gap: 1rem; }
   .sp-logos { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
   .sp-divider { width: 1px; height: 60px; }
 
-  /* ── Testimonials ── */
+  /* â”€â”€ Testimonials â”€â”€ */
   .test-grid { grid-template-columns: 1fr; }
 
-  /* ── Team ── */
+  /* â”€â”€ Team â”€â”€ */
   .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
 
-  /* ── Admissions ── */
+  /* â”€â”€ Admissions â”€â”€ */
 
-  /* ── Footer ── */
+  /* â”€â”€ Footer â”€â”€ */
   footer { padding: 3rem 1.5rem 2rem; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
 }
 
 
-/* ─────────────────────────────────────────
-   480px — Phone
-───────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   480px â€” Phone
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 480px) {
 
-  /* ── Sections ── */
+  /* â”€â”€ Sections â”€â”€ */
   #philosophy, #why, #sports, #programmes,
   #testimonials, #team, #careers, #admissions { padding-left: 1.2rem; padding-right: 1.2rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
 
-  /* ── Nav ── */
+  /* â”€â”€ Nav â”€â”€ */
   nav { padding: .75rem 1.2rem; }
   .nav-emblem { width: 48px; height: 48px; }
   .nav-name { font-size: .82rem; }
 
-  /* ── Hero ── */
+  /* â”€â”€ Hero â”€â”€ */
   #welcome { padding-left: 1.2rem; padding-right: 1.2rem; }
   .hero-left { padding: 4rem 0 3rem; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
@@ -539,23 +539,23 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
   .hero-ctas { flex-direction: column; align-items: center; gap: .75rem; }
   .btn-primary, .btn-ghost { width: 100%; text-align: center; }
 
-  /* ── Founder ── */
+  /* â”€â”€ Founder â”€â”€ */
   .ff-aside { min-height: 220px; }
   .ff-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
   .ff-body { font-size: .88rem; }
 
-  /* ── Philosophy ── */
+  /* â”€â”€ Philosophy â”€â”€ */
   #philosophy { padding-left: 1.2rem; padding-right: 1.2rem; }
   .phil-grid { grid-template-columns: 1fr; }
   .phil-header h2 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
 
-  /* ── Why ── */
+  /* â”€â”€ Why â”€â”€ */
   #why { padding-left: 1.2rem; padding-right: 1.2rem; }
   .why-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
   .reasons-grid { grid-template-columns: 1fr; }
   .pillar-panel { padding: 2rem 1.4rem; }
 
-  /* ── Sports ── */
+  /* â”€â”€ Sports â”€â”€ */
   #sports { padding-left: 1.2rem; padding-right: 1.2rem; }
   .sports-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
   .sports-disciplines { grid-template-columns: 1fr; }
@@ -567,40 +567,40 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
   .sports-event-bar { flex-direction: column; gap: .8rem; text-align: center; }
   .msc-row { grid-template-columns: 1fr; }
 
-  /* ── Programmes ── */
+  /* â”€â”€ Programmes â”€â”€ */
   #programmes { padding-left: 1.2rem; padding-right: 1.2rem; }
   .programme-grid { grid-template-columns: 1fr; }
   .french-banner { flex-direction: column; gap: .8rem; text-align: center; }
   .prog-tags { justify-content: center; }
 
-  /* ── Testimonials ── */
+  /* â”€â”€ Testimonials â”€â”€ */
   #testimonials { padding-left: 1.2rem; padding-right: 1.2rem; }
   .test-grid { grid-template-columns: 1fr; }
 
-  /* ── Team ── */
+  /* â”€â”€ Team â”€â”€ */
   #team { padding-left: 1.2rem; padding-right: 1.2rem; }
   .team-placeholder-grid { grid-template-columns: 1fr; }
   .team-credentials { gap: 1.2rem; }
 
-  /* ── Admissions ── */
+  /* â”€â”€ Admissions â”€â”€ */
   #admissions { padding-left: 1.2rem; padding-right: 1.2rem; }
   .adm-layout { grid-template-columns: 1fr; }
   .adm-info-body { padding: 1rem 1.2rem; }
   .adm-cta-block { padding: 1rem 1.2rem 1.5rem; }
   .info-row { flex-direction: column; align-items: flex-start; gap: .2rem; }
 
-  /* ── Careers ── */
+  /* â”€â”€ Careers â”€â”€ */
   #careers { padding-left: 1.2rem; padding-right: 1.2rem; }
   .jobs-grid { grid-template-columns: 1fr; }
 
-  /* ── Footer ── */
+  /* â”€â”€ Footer â”€â”€ */
   footer { padding: 3rem 1.2rem 2rem; }
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
 }
 
 /* variables.css */
-/* ══ GLOBAL VARIABLES ══ */
+/* â•â• GLOBAL VARIABLES â•â• */
 :root {
   --navy:    #0D1B2A;
   --navy2:   #162535;
@@ -618,10 +618,10 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 }
 
 /*footer.css*/
-/* ══ FOOTER ══ */
+/* â•â• FOOTER â•â• */
 footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative; overflow: hidden; }
 
-.footer-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.03; z-index: 0; }
+.footer-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.03; z-index: 0; }
 
 .footer-top, .footer-bottom { position: relative; z-index: 1; }
 
@@ -656,7 +656,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .footer-mark { font-family: 'Cormorant Garamond', serif; font-size: .82rem; color: rgba(201,168,76,0.4); letter-spacing: .06em; }
 
 /* nav.css/
-/* ══ NAVIGATION ══ */
+/* â•â• NAVIGATION â•â• */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; align-items: center; justify-content: space-between;
@@ -737,7 +737,7 @@ nav {
 
 .nav-apply:hover { opacity: .85; }
 
-/* ══ RESPONSIVE NAVIGATION ══ */
+/* â•â• RESPONSIVE NAVIGATION â•â• */
 @media (max-width: 1100px) {
   nav { padding: 1rem 2rem; }
   
@@ -783,7 +783,7 @@ nav {
 }
 
 /* admission.css*/
-/* ══ ADMISSIONS ══ */
+/* â•â• ADMISSIONS â•â• */
 #admissions { background: var(--parch); padding: 6rem 5rem; }
 
 .adm-header { text-align: center; max-width: 600px; margin: 0 auto 4rem; }
@@ -849,10 +849,10 @@ nav {
 .adm-contact a:hover { opacity: .7; }
 
 /* careers.css*/
-/* ══ CAREERS ══ */
+/* â•â• CAREERS â•â• */
 #careers { background: var(--navy); padding: 6rem 5rem; position: relative; overflow: hidden; }
 
-.careers-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
+.careers-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
 
 .careers-header, .jobs-grid, .careers-ethos { position: relative; z-index: 1; }
 
@@ -886,7 +886,7 @@ nav {
 
 .job-requirements li { font-size: .82rem; color: rgba(240,235,224,0.55); display: flex; gap: .6rem; align-items: flex-start; }
 
-.job-requirements li::before { content: '✦'; color: var(--gold); flex-shrink: 0; font-size: .55rem; margin-top: .22rem; }
+.job-requirements li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .55rem; margin-top: .22rem; }
 
 .job-apply-btn { display: inline-block; padding: .6rem 1.4rem; background: transparent; border: 1px solid rgba(201,168,76,0.35); border-radius: 2px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); cursor: pointer; transition: all .25s; text-decoration: none; }
 
@@ -900,12 +900,12 @@ nav {
 
 /* founder.css*/
 
-/* ══ FOUNDER FULL ══ */
+/* â•â• FOUNDER FULL â•â• */
 #founder-full { background: var(--parch); display: grid; grid-template-columns: 1fr 1.1fr; }
 
 .ff-aside { background: var(--forest); padding: 5rem 3.5rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
 
-.ff-aside-bg { position: absolute; inset: 0; background-image: url('../../assets/images/founder.webp'); background-size: cover; background-position: right; opacity: 0.50; z-index: 0; }
+.ff-aside-bg { position: absolute; inset: 0; background-image: url('../assets/images/founder.webp'); background-size: cover; background-position: right; opacity: 0.50; z-index: 0; }
 
 .ff-aside::after { content: '"'; position: absolute; right: -1rem; bottom: -3rem; font-family: 'Cormorant Garamond', serif; font-size: 20rem; font-weight: 600; color: rgba(255,255,255,0.04); line-height: 1; z-index: 1; }
 
@@ -939,7 +939,7 @@ nav {
 
 /*hero.css*/
 
-/* ══ HERO ══ */
+/* â•â• HERO â•â• */
 #welcome {
   min-height: 100vh; background: var(--navy);
   display: grid; grid-template-columns: 1fr;
@@ -949,7 +949,7 @@ nav {
 
 .hero-bg-img {
   position: absolute; inset: 0;
-  background-image: url('../../assets/images/sample.webp');
+  background-image: url('../assets/images/sample.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.25;
@@ -1013,10 +1013,10 @@ nav {
 
 /* philosophy.css*/
 
-/* ══ PHILOSOPHY ══ */
+/* â•â• PHILOSOPHY â•â• */
 #philosophy { background: var(--navy); padding: 6rem 5rem; position: relative; overflow: hidden; }
 
-.phil-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
+.phil-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.05; z-index: 0; }
 
 .phil-header, .phil-grid { position: relative; z-index: 1; }
 
@@ -1062,12 +1062,12 @@ nav {
 
 .values-list li { display: flex; gap: .75rem; align-items: flex-start; font-size: .875rem; line-height: 1.6; color: rgba(240,235,224,0.62); font-weight: 300; }
 
-.values-list li::before { content: '✦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
+.values-list li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
 
 .values-list li strong { color: var(--gold-lt); }
 
 /* programmes.css*/
-/* ══ PROGRAMMES ══ */
+/* â•â• PROGRAMMES â•â• */
 #programmes { background: var(--cream); padding: 6rem 5rem; }
 
 .prog-header { text-align: center; max-width: 640px; margin: 0 auto 4rem; }
@@ -1138,17 +1138,17 @@ nav {
 
 /* shared.css*/
 
-/* ══ SHARED ══ */
+/* â•â• SHARED â•â• */
 .section-tag { display: inline-block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: .9rem; }
 
-.section-tag::before { content: '✦ '; }
+.section-tag::before { content: 'âœ¦ '; }
 
 .divider-ornament { text-align: center; padding: 2rem 0; font-size: .75rem; letter-spacing: .5em; color: rgba(201,168,76,0.35); }
 
 .gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: .2; }
 
 /* sports.css8/
-/* ══ SPORTS ══ */
+/* â•â• SPORTS â•â• */
 #sports { background: var(--forest); padding: 6rem 5rem; }
 
 .sports-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-bottom: 4rem; align-items: center; }
@@ -1179,7 +1179,7 @@ nav {
 
 .sports-list li { font-size: .85rem; line-height: 1.65; color: rgba(240,235,224,0.72); display: flex; gap: .7rem; align-items: flex-start; }
 
-.sports-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
+.sports-list li::before { content: 'â†’'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
 
 .sports-disciplines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 3rem; }
 
@@ -1219,7 +1219,7 @@ nav {
 
 .msc-text { font-size: .82rem; line-height: 1.65; color: rgba(240,235,224,0.65); }
 
-/* ── Sports Partners ── */
+/* â”€â”€ Sports Partners â”€â”€ */
 .sports-partners {
   display: flex;
   flex-direction: column;
@@ -1306,7 +1306,7 @@ nav {
 
 /* teams.css*/
 
-/* ══ TEAM ══ */
+/* â•â• TEAM â•â• */
 #team { background: var(--parch); padding: 6rem 5rem; }
 
 .team-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-bottom: 4rem; align-items: end; }
@@ -1370,7 +1370,7 @@ nav {
   font-size: 0;
 }
 
-/* ── Qualifications ── */
+/* â”€â”€ Qualifications â”€â”€ */
 .team-quals {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -1450,10 +1450,10 @@ nav {
 .cred-text { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--forest2); line-height: 1.4; }
 
 /* testimonials.css*/
-/* ══ TESTIMONIALS ══ */
+/* â•â• TESTIMONIALS â•â• */
 #testimonials { background: var(--navy); padding: 6rem 5rem; position: relative; overflow: hidden; }
 
-.test-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/founder.webp'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0; filter: grayscale(40%); }
+.test-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/founder.webp'); background-size: cover; background-position: center; opacity: 0.15; z-index: 0; filter: grayscale(40%); }
 
 .test-header, .test-grid, .test-note { position: relative; z-index: 1; }
 
@@ -1523,7 +1523,7 @@ nav {
 .test-note { text-align: center; margin-top: 2.5rem; font-size: .82rem; color: rgba(240,235,224,0.3); font-style: italic; }
 
 /*why.css*/
-/* ══ WHY ══ */
+/* â•â• WHY â•â• */
 #why { background: var(--mist); padding: 6rem 5rem; }
 
 .why-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
@@ -1536,7 +1536,7 @@ nav {
 
 .pillar-panel { padding: 2.5rem 2rem; position: relative; overflow: hidden; z-index: 1; }
 
-.pillar-bg-img { position: absolute; inset: 0; background-image: url('../../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.1; z-index: -1; transition: opacity .4s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+.pillar-bg-img { position: absolute; inset: 0; background-image: url('../assets/images/sample.webp'); background-size: cover; background-position: center; opacity: 0.1; z-index: -1; transition: opacity .4s, transform .6s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .pillar-panel:hover .pillar-bg-img { opacity: 0.18; transform: scale(1.08); }
 
@@ -1577,3 +1577,160 @@ nav {
 .rt-title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: .5rem; line-height: 1.25; }
 
 .rt-body { font-size: .82rem; line-height: 1.72; color: #4a5540; font-weight: 300; }
+
+
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Mobile-first breakpoints
+   1100px → tablet landscape / small desktop
+    768px → tablet portrait
+    480px → phone
+══════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────
+   1100px — Tablet landscape
+───────────────────────────────────────── */
+@media (max-width: 1100px) {
+
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions,
+  footer { padding-left: 2.5rem; padding-right: 2.5rem; }
+
+  #founder-full { grid-template-columns: 1fr; }
+  .ff-aside { min-height: 340px; padding: 3.5rem 2.5rem; }
+  .ff-main  { padding: 3.5rem 2.5rem; }
+
+  #welcome { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+  .phil-grid { grid-template-columns: 1fr 1fr; }
+
+  .why-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .why-pillars { grid-template-columns: 1fr; gap: 0; }
+  .reasons-grid { grid-template-columns: 1fr 1fr; }
+
+  .sports-header { grid-template-columns: 1fr; gap: 2rem; }
+  .sports-disciplines { grid-template-columns: 1fr 1fr; }
+  .sports-content-cols { grid-template-columns: 1fr; }
+  .msc-row { grid-template-columns: 1fr 1fr; }
+
+  .programme-grid { grid-template-columns: 1fr; }
+
+  .test-grid { grid-template-columns: 1fr 1fr; }
+
+  .team-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
+
+  .adm-layout { grid-template-columns: 1fr; }
+  .adm-info { position: static; }
+
+  .careers-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+
+  footer { padding-left: 2.5rem; padding-right: 2.5rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+
+
+/* ─────────────────────────────────────────
+   768px — Tablet portrait
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions,
+  footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions { padding-top: 4rem; padding-bottom: 4rem; }
+
+  .ff-aside { min-height: 260px; padding: 2.5rem 1.5rem; }
+  .ff-main  { padding: 2.5rem 1.5rem; }
+
+  .phil-grid { grid-template-columns: 1fr; }
+
+  .reasons-grid { grid-template-columns: 1fr 1fr; }
+
+  .sports-disciplines { grid-template-columns: 1fr 1fr; }
+  .msc-row { grid-template-columns: 1fr; }
+  .sports-partners { padding: 1.5rem; gap: 1rem; }
+  .sp-logos { flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
+  .sp-divider { width: 1px; height: 60px; }
+
+  .test-grid { grid-template-columns: 1fr; }
+
+  .team-placeholder-grid { grid-template-columns: 1fr 1fr; }
+
+  footer { padding: 3rem 1.5rem 2rem; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
+}
+
+
+/* ─────────────────────────────────────────
+   480px — Phone
+───────────────────────────────────────── */
+@media (max-width: 480px) {
+
+  #philosophy, #why, #sports, #programmes,
+  #testimonials, #team, #careers, #admissions { padding-left: 1.2rem; padding-right: 1.2rem; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+  nav { padding: .75rem 1.2rem; }
+  .nav-emblem { width: 48px; height: 48px; }
+  .nav-name { font-size: .82rem; }
+
+  #welcome { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .hero-left { padding: 4rem 0 3rem; }
+  .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
+  .hero-intro { font-size: .88rem; }
+  .hero-ctas { flex-direction: column; align-items: center; gap: .75rem; }
+  .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+
+  .ff-aside { min-height: 220px; }
+  .ff-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  .ff-body { font-size: .88rem; }
+
+  #philosophy { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .phil-grid { grid-template-columns: 1fr; }
+  .phil-header h2 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+
+  #why { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .why-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+  .reasons-grid { grid-template-columns: 1fr; }
+  .pillar-panel { padding: 2rem 1.4rem; }
+
+  #sports { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .sports-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+  .sports-disciplines { grid-template-columns: 1fr; }
+  .sports-partners { padding: 1.2rem; gap: .8rem; }
+  .sp-logos { flex-direction: row; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .sp-logo-img { width: 90px; height: 90px; }
+  .sp-logo-card { flex-direction: column; align-items: center; text-align: center; }
+  .sp-divider { width: 40px; height: 1px; align-self: center; }
+  .sports-event-bar { flex-direction: column; gap: .8rem; text-align: center; }
+  .msc-row { grid-template-columns: 1fr; }
+
+  #programmes { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .programme-grid { grid-template-columns: 1fr; }
+  .french-banner { flex-direction: column; gap: .8rem; text-align: center; }
+  .prog-tags { justify-content: center; }
+
+  #testimonials { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .test-grid { grid-template-columns: 1fr; }
+
+  #team { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .team-placeholder-grid { grid-template-columns: 1fr; }
+  .team-credentials { gap: 1.2rem; }
+
+  #admissions { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .adm-layout { grid-template-columns: 1fr; }
+  .adm-info-body { padding: 1rem 1.2rem; }
+  .adm-cta-block { padding: 1rem 1.2rem 1.5rem; }
+  .info-row { flex-direction: column; align-items: flex-start; gap: .2rem; }
+
+  #careers { padding-left: 1.2rem; padding-right: 1.2rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+
+  footer { padding: 3rem 1.2rem 2rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: .8rem; text-align: center; }
+}
