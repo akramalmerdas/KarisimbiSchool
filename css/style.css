@@ -162,7 +162,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 
 /* â•â• SHARED â•â• */
 .section-tag { display: inline-block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: .9rem; }
-.section-tag::before { content: 'âœ¦ '; }
+/* .section-tag::before { content: 'âœ¦ '; } */
 .divider-ornament { text-align: center; padding: 2rem 0; font-size: .75rem; letter-spacing: .5em; color: rgba(201,168,76,0.35); }
 .gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: .2; }
 
@@ -1141,7 +1141,7 @@ nav {
 /* â•â• SHARED â•â• */
 .section-tag { display: inline-block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; margin-bottom: .9rem; }
 
-.section-tag::before { content: 'âœ¦ '; }
+/* .section-tag::before { content: 'âœ¦ '; } */
 
 .divider-ornament { text-align: center; padding: 2rem 0; font-size: .75rem; letter-spacing: .5em; color: rgba(201,168,76,0.35); }
 
