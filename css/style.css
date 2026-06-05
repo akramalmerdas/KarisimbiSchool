@@ -240,7 +240,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .phil-card.values  .phil-card-header { background: linear-gradient(135deg, var(--forest) 0%, var(--navy2) 100%); }
 .values-list { list-style: none; display: flex; flex-direction: column; gap: .75rem; }
 .values-list li { display: flex; gap: .75rem; align-items: flex-start; font-size: .875rem; line-height: 1.6; color: rgba(240,235,224,0.62); font-weight: 300; }
-.values-list li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
+.values-list li::before { content: ''; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
 .values-list li strong { color: var(--gold-lt); }
 
 /* â•â• WHY â•â• */
@@ -288,7 +288,7 @@ footer { background: var(--ink); padding: 4.5rem 5rem 2.5rem; position: relative
 .sports-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--gold); margin-bottom: 1rem; }
 .sports-list { list-style: none; display: flex; flex-direction: column; gap: .65rem; }
 .sports-list li { font-size: .85rem; line-height: 1.65; color: rgba(240,235,224,0.72); display: flex; gap: .7rem; align-items: flex-start; }
-.sports-list li::before { content: 'â†’'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
+.sports-list li::before { content: ''; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
 .sports-disciplines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 3rem; }
 .sport-card { background: rgba(13,27,42,0.35); border: 1px solid rgba(201,168,76,0.2); border-radius: 4px; padding: 0; text-align: center; transition: background .3s, border-color .3s; overflow: hidden; display: flex; flex-direction: column; }
 .sport-card:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.4); }
@@ -886,7 +886,7 @@ nav {
 
 .job-requirements li { font-size: .82rem; color: rgba(240,235,224,0.55); display: flex; gap: .6rem; align-items: flex-start; }
 
-.job-requirements li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .55rem; margin-top: .22rem; }
+.job-requirements li::before { content: ''; color: var(--gold); flex-shrink: 0; font-size: .55rem; margin-top: .22rem; }
 
 .job-apply-btn { display: inline-block; padding: .6rem 1.4rem; background: transparent; border: 1px solid rgba(201,168,76,0.35); border-radius: 2px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); cursor: pointer; transition: all .25s; text-decoration: none; }
 
@@ -1062,7 +1062,7 @@ nav {
 
 .values-list li { display: flex; gap: .75rem; align-items: flex-start; font-size: .875rem; line-height: 1.6; color: rgba(240,235,224,0.62); font-weight: 300; }
 
-.values-list li::before { content: 'âœ¦'; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
+.values-list li::before { content: ''; color: var(--gold); flex-shrink: 0; font-size: .6rem; margin-top: .3rem; }
 
 .values-list li strong { color: var(--gold-lt); }
 
@@ -1179,7 +1179,7 @@ nav {
 
 .sports-list li { font-size: .85rem; line-height: 1.65; color: rgba(240,235,224,0.72); display: flex; gap: .7rem; align-items: flex-start; }
 
-.sports-list li::before { content: 'â†’'; color: var(--gold); flex-shrink: 0; font-size: .72rem; margin-top: .2rem; }
+
 
 .sports-disciplines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 3rem; }
 
